@@ -229,7 +229,7 @@
 				]
 			},
 			{
-				"name": "Notebook1",
+				"name": "Transform_Data_To_Silver_Gold",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
@@ -373,7 +373,7 @@
 				"type": "Lookup",
 				"dependsOn": [
 					{
-						"activity": "Notebook1",
+						"activity": "Transform_Data_To_Silver_Gold",
 						"dependencyConditions": [
 							"Succeeded"
 						]
