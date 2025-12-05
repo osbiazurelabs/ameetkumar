@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "Truncate table Ameet.[dbo].[Gold_Sorted_Data]",
+						"sqlReaderQuery": "Truncate table Ameet.[dbo].[Gold_Sorted_Data]\n\nselect 1 as temp",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
