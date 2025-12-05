@@ -1,0 +1,67 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_Storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-9653dd84-763b-4dac-9591-7da250d0e88e-c000.snappy.parquet",
+				"folderPath": "gold",
+				"fileSystem": "retail"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "transaction_date",
+				"type": "DATE"
+			},
+			{
+				"name": "product_id",
+				"type": "INT32"
+			},
+			{
+				"name": "product_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "category",
+				"type": "UTF8"
+			},
+			{
+				"name": "store_id",
+				"type": "INT32"
+			},
+			{
+				"name": "store_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "location",
+				"type": "UTF8"
+			},
+			{
+				"name": "total_quantity_sold",
+				"type": "INT64"
+			},
+			{
+				"name": "total_sales_amount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "number_of_transactions",
+				"type": "INT64"
+			},
+			{
+				"name": "average_transaction_value",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

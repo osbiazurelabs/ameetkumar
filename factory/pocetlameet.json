@@ -1,0 +1,9 @@
+{
+	"name": "pocetlameet",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "135a7e71-2a9b-4b5c-9a17-f220f7e0b82b",
+		"tenantId": "0223fd63-dec0-4282-accb-460fb4f20168"
+	}
+}

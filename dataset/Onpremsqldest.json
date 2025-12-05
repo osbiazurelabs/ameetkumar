@@ -1,0 +1,17 @@
+{
+	"name": "Onpremsqldest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPrem_SQLServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Gold_Sorted_Data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

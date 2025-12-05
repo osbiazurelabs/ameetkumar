@@ -1,0 +1,9 @@
+{
+	"name": "onpremsqlconn",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"selfContainedInteractiveAuthoringEnabled": false
+		}
+	}
+}
