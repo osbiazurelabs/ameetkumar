@@ -1,0 +1,68 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_Storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "exports/retail_gold_sales_summary_single",
+				"fileSystem": "retail"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "transaction_date",
+				"type": "String"
+			},
+			{
+				"name": "product_id",
+				"type": "String"
+			},
+			{
+				"name": "product_name",
+				"type": "String"
+			},
+			{
+				"name": "category",
+				"type": "String"
+			},
+			{
+				"name": "store_id",
+				"type": "String"
+			},
+			{
+				"name": "store_name",
+				"type": "String"
+			},
+			{
+				"name": "location",
+				"type": "String"
+			},
+			{
+				"name": "total_quantity_sold",
+				"type": "String"
+			},
+			{
+				"name": "total_sales_amount",
+				"type": "String"
+			},
+			{
+				"name": "number_of_transactions",
+				"type": "String"
+			},
+			{
+				"name": "average_transaction_value",
+				"type": "String"
+			}
+		]
+	}
+}
