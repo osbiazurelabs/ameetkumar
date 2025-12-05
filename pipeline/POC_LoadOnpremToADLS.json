@@ -5,8 +5,6 @@
 			{
 				"name": "Load_Transaction_Data",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -59,8 +57,6 @@
 			{
 				"name": "Load_Product_Data",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Load_Transaction_Data",
@@ -120,8 +116,6 @@
 			{
 				"name": "Load_Store_Data",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Load_Product_Data",
@@ -181,8 +175,6 @@
 			{
 				"name": "Load_Customer_Data",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Load_Store_Data",
