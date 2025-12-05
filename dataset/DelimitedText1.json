@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "part-00000-tid-5780695045856082561-a230a63f-74d8-4840-a4cc-b49280476be8-86-1-c000.csv",
-				"folderPath": "gold/csv/output.csv",
+				"fileName": "part-00000-tid-6303613488242984603-3f81b490-9502-40e3-9e51-72683b45dab4-235-1-c000.csv",
+				"folderPath": "exports/retail_gold_sales_summary_single",
 				"fileSystem": "retail"
 			},
 			"columnDelimiter": ",",
