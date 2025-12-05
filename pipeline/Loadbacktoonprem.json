@@ -1,34 +1,6 @@
 {
 	"name": "Loadbacktoonprem",
 	"properties": {
-		"activities": [
-			{
-				"name": "Truncate_Onprem_Table",
-				"type": "Lookup",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "SqlServerSource",
-						"sqlReaderQuery": "Truncate table Ameet.[dbo].[Gold_Sorted_Data]\n\nselect 1 as temp",
-						"queryTimeout": "02:00:00",
-						"partitionOption": "None"
-					},
-					"dataset": {
-						"referenceName": "SqlServerTable2",
-						"type": "DatasetReference"
-					},
-					"firstRowOnly": false
-				}
-			}
-		],
 		"annotations": [],
 		"lastPublishTime": "2025-12-05T11:06:04Z"
 	},
