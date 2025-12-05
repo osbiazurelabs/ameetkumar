@@ -1,8 +1,0 @@
-{
-	"name": "Loadbacktoonprem",
-	"properties": {
-		"annotations": [],
-		"lastPublishTime": "2025-12-05T11:06:04Z"
-	},
-	"type": "Microsoft.DataFactory/factories/pipelines"
-}
