@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Load_Transaction_Data",
+				"name": "Load_Transaction_Data_Onprem",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -55,11 +55,11 @@
 				]
 			},
 			{
-				"name": "Load_Product_Data",
+				"name": "Load_Product_Data_OnPrem",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Load_Transaction_Data",
+						"activity": "Load_Transaction_Data_Onprem",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -114,11 +114,11 @@
 				]
 			},
 			{
-				"name": "Load_Store_Data",
+				"name": "Load_Store_Data_Onprem",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Load_Product_Data",
+						"activity": "Load_Product_Data_OnPrem",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -173,11 +173,11 @@
 				]
 			},
 			{
-				"name": "Load_Customer_Data",
+				"name": "Load_Customer_Data_HTTP",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Load_Store_Data",
+						"activity": "Load_Store_Data_Onprem",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -233,7 +233,7 @@
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Load_Customer_Data",
+						"activity": "Load_Customer_Data_HTTP",
 						"dependencyConditions": [
 							"Succeeded"
 						]
